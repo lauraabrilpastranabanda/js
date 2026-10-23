@@ -29,11 +29,19 @@ const verSigno=()=>{
 }
 
 document.getElementById("reset").onclick=()=>{
-    dia.value=1
-    mes.value="ENERO"
-    signo.src="img/signos/signos.png"
+    dia.value=1;
+    mes.value="ENERO";
+    signo.src="img/signos/signos.png";
+    valorDia.innerHTML = "DÍA 1";
+    fecha.textContent = "1 de ENERO";
 }
 dia.oninput=()=>{verSigno()};
 mes.onchange=()=>{verSigno()};
 
 verSigno();
+
+//diferencia entre let y var 
+// diferencia entre innerHTML y textContent 
+// diferencia entre querySelector t getElementById R
+// que es el operador ternario 
+// como se modifica el atributo src de una imagen
